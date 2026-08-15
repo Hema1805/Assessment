@@ -1,0 +1,32 @@
+body {   
+  min-height: 100vh;  
+  margin: 0;    
+  display: flex;   
+  justify-content: center;   
+  align-items: center;    
+  font-family: Arial, sans-serif;    
+  background: #f4f6f8; 
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+.login-container {  
+  width: min(100% - 32px, 380px); 
+  padding: 32px;   
+  background: white;   
+  border-radius: 12px;    
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+} 
+
+input, button {   
+  width: 100%;   
+  box-sizing: border-box;
+} 
+
+@media (max-width: 480px) {    
+.login-container {      
+   padding: 22px;  
+}
+}
