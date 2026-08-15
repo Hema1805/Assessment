@@ -24,14 +24,28 @@
 <label for="password">Password</label>         
 <input id="password" name="password" type="password" autocomplete="current-password" required> <br>
 
-<button type="submit" id="loginButton">Login</button>   
-
 <p id="errorMessage" role="alert" hidden></p>      
 </form>  
+<button type="click" id="loginButton">Login</button> 
 
+<div class="login-options">
+
+    <label class="remember-me">
+        <input type="checkbox" id="rememberMe">
+        <span>Remember me</span>
+    </label>
+
+    <a href="#" id="forgotPassword">Forgot password?</a>
+
+</div>
+
+<p class="signup-text">
+    <a href="#" id="signupLink">Sign up</a>
+</p>
 </main>   
 
-<script src="app.js"></script> 
+<button id="logoutButton" hidden>Logout</button>
+<script src="script.js"></script> 
 
 </body>
 </html>

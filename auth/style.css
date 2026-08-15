@@ -13,21 +13,115 @@ body {
 }
 
 .login-container {  
-  width: min(100% - 32px, 380px); 
-  padding: 32px;   
-  background: white;   
-  border-radius: 12px;    
-  box-shadow: 0 8px 30px rgba(0,0,0,.08);
-} 
+    width: min(100% - 32px, 330px); 
+    padding: 20px 25px;   
+    background: rgba(244, 206, 224, 0.42);   
+    border-radius: 12px;     
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0);
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
 
 input, button {   
-  width: 100%;   
-  box-sizing: border-box;
-  border-radius: 4rem;
-} 
+    width: 100%;   
+    box-sizing: border-box;
+    border-radius: 4rem;
+}
+
+#loginButton {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    cursor: pointer;
+}
+
+.login-container input {
+    padding: 10px 15px;
+    margin-bottom: 18px;
+}
 
 @media (max-width: 480px) {    
 .login-container {      
    padding: 22px;  
 }
 }
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.remember-me input {
+    width: auto;
+    margin: 0;
+}
+
+#forgotPassword {
+    color: black;
+    text-decoration: none;
+}
+
+#forgotPassword:hover {
+    text-decoration: underline;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+#signupLink {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#signupLink:hover {
+    text-decoration: underline;
+}
+
+.dashboard-page { 
+    min-height: 100vh; 
+    margin: 0; 
+    display: block; 
+    background-color: rgba(241, 196, 214, 0.42); 
+    background-image: none; 
+}
+
+.dashboard-container {
+    text-align: center;
+    padding-top: 60px;
+}
+
+#logoutButton {
+    width: 180px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
