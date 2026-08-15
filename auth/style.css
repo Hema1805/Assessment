@@ -23,7 +23,7 @@ body {
 input, button {   
   width: 100%;   
   box-sizing: border-box;
-  border-radius: 2rem;
+  border-radius: 4rem;
 } 
 
 @media (max-width: 480px) {    
