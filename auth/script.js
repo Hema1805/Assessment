@@ -37,12 +37,14 @@ if (loginForm) {
 
         }
         else {
+            errorMessage.hidden=false;
             errorMessage.textContent = "Invalid username or password.";
         }
     });
 }
 
-if (window.location.pathname.includes("dashboard.html")) {
+if (window.location.pathname.includes("dashboard.html"))
+    {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
 
     if (isLoggedIn !== "true") {
